@@ -1,4 +1,4 @@
-package me.xiayong.example.springboot2.examplespringboot2;
+package me.xiayong.example.springboot2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

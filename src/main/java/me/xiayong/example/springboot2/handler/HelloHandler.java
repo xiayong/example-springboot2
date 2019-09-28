@@ -1,4 +1,4 @@
-package me.xiayong.example.springboot2.examplespringboot2.handler;
+package me.xiayong.example.springboot2.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

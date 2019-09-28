@@ -1,4 +1,4 @@
-package me.xiayong.example.springboot2.examplespringboot2.controller;
+package me.xiayong.example.springboot2.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

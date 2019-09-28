@@ -1,7 +1,7 @@
-package me.xiayong.example.springboot2.examplespringboot2.router;
+package me.xiayong.example.springboot2.router;
 
-import me.xiayong.example.springboot2.examplespringboot2.handler.HelloHandler;
-import me.xiayong.example.springboot2.examplespringboot2.handler.TimeHandler;
+import me.xiayong.example.springboot2.handler.HelloHandler;
+import me.xiayong.example.springboot2.handler.TimeHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

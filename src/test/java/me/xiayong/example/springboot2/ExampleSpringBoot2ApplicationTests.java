@@ -1,4 +1,4 @@
-package me.xiayong.example.springboot2.examplespringboot2;
+package me.xiayong.example.springboot2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
