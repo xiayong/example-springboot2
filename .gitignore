@@ -1,5 +1,17 @@
-/target/
+target
 !.mvn/wrapper/maven-wrapper.jar
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Log file
+*.log
+
 
 ### STS ###
 .apt_generated
@@ -12,6 +24,7 @@
 
 ### IntelliJ IDEA ###
 .idea
+/.idea
 *.iws
 *.iml
 *.ipr
@@ -23,3 +36,10 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+.settings
+.project
+.classpath
+.factorypath
+.vscode
+.pmdCache
