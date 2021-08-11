@@ -20,7 +20,8 @@
 
 	<modules>
 		<module>springboot2-reactive</module>
-	</modules>
+        <module>springboot2-kafka</module>
+    </modules>
 
 
 	<dependencyManagement>

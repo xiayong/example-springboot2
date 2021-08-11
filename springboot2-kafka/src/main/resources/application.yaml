@@ -1,0 +1,25 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+
+spring:
+  application:
+    name: springboot2-kafka
+
+
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      enable-auto-commit: false
+
+application:
+  kafka:
+    topics: demo-topic
+    consume:
+      group-default: default
+      concurrency: 2
