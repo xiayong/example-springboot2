@@ -21,7 +21,7 @@
 	<modules>
 		<module>springboot2-reactive</module>
         <module>springboot2-kafka</module>
-    </modules>
+	</modules>
 
 
 	<dependencyManagement>
@@ -29,7 +29,7 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
-				<version>2.3.12.RELEASE</version>
+				<version>2.7.5</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

@@ -41,9 +41,7 @@ public class DemoSender implements ApplicationListener<ContextRefreshedEvent> {
                                 "info", "hello",
                                 "timestamp", new Date());
                         this.kafkaTemplate.send(topic, data).get();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    } catch (ExecutionException e) {
+                    } catch (InterruptedException | ExecutionException e) {
                         e.printStackTrace();
                     }
                 });
