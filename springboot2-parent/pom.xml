@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.xiayong.example.springboot2</groupId>
-	<artifactId>example-springboot2</artifactId>
+	<artifactId>springboot2-parent</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>example-springboot2</name>
+	<name>springboot2-parent</name>
 	<description>Demo project for Spring Boot2</description>
 
 
@@ -18,11 +18,17 @@
 	</properties>
 
 
-	<modules>
-		<module>springboot2-parent</module>
-		<module>springboot2-reactive</module>
-        <module>springboot2-kafka</module>
-	</modules>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>2.7.5</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
