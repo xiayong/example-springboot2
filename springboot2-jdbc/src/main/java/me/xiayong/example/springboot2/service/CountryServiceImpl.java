@@ -4,10 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import me.xiayong.example.springboot2.persistence.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
-import org.springframework.transaction.support.TransactionSynchronizationUtils;
 
 import java.util.List;
 
