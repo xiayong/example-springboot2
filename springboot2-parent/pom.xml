@@ -10,9 +10,6 @@
 
 	<name>springboot2-parent</name>
 	<description>Demo project for Spring Boot2</description>
-	<modules>
-		<module>../springboot2-jdbc</module>
-	</modules>
 
 
 	<properties>
