@@ -21,7 +21,7 @@
 	<modules>
 		<module>springboot2-parent</module>
 		<module>springboot2-reactive</module>
-        	<module>springboot2-kafka</module>
+		<module>springboot2-kafka</module>
 		<module>springboot2-jdbc</module>
 	</modules>
 
