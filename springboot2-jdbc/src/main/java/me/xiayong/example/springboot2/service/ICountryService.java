@@ -11,4 +11,6 @@ public interface ICountryService {
     void saveCountry(String country);
 
     void saveManyCountries(List<String> countries);
+
+    List<String> getCountries(String country);
 }

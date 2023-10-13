@@ -1,5 +1,6 @@
 package me.xiayong.example.springboot2.service;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,14 @@ public class CountryServiceTests {
     @Test
     public void testTrans() {
         countryService.saveManyCountries(List.of("ABCDEFG", "ABCDEFG1", "ABCDEFG2"));
+    }
+
+
+
+    @Test
+    public void testGet() {
+        final List<String> countries = countryService.getCountries("china");
+        Assertions.assertNotNull(countries);
+        Assertions.assertTrue(!countries.isEmpty());
     }
 }

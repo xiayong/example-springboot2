@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @author: Yong Xia.
  * @date: Jun-27/2023
@@ -20,5 +22,11 @@ public class CountryRepository {
 
     public int insertCountry(String country) {
         return this.jdbcTemplate.update("INSERT INTO `country`(`country`) VALUES(?)", country);
+    }
+
+    public List<String> getCountry(String country) {
+        return this.jdbcTemplate.query("SELECT * FROM `country` WHERE `country` LIKE CONCAT('%',?,'%')",
+                (rs, rowNum) -> rs.getString("country"),
+                country);
     }
 }

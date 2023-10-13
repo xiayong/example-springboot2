@@ -40,4 +40,9 @@ public class CountryServiceImpl implements ICountryService{
             }
         }
     }
+
+    @Override
+    public List<String> getCountries(String country) {
+        return countryRepository.getCountry(country);
+    }
 }
