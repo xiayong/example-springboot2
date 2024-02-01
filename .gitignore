@@ -43,3 +43,5 @@ target
 .factorypath
 .vscode
 .pmdCache
+
+.DS_Store
